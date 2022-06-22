@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       
-      run: pwd && ls && docker build .torrent-dl --tag my-image-name:$(date +%s)
+      run: pwd && ls && docker build torrent-dl --tag my-image-name:$(date +%s)
