@@ -1,0 +1,5 @@
+adduser jame || export noj=true 
+
+if $noj; then
+ls
+fi

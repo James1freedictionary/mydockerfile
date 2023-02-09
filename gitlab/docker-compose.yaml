@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+	gitlab:
+		image: gitlab/gitlab-ce
+		ports:
+			- "80:80"
+			- "443:443"
+			- "23:22"
+		volumes:
+			- "$HOME/gitlab/log:/etc/gitlab/log"
+			- "$HOME/gitlab/conf:/etc/gitlab/conf"
+			- "$HOME/gitlab/dt:/var/opt"
+
+
