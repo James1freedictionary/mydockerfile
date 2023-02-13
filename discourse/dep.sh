@@ -18,7 +18,7 @@ apk add curl redis
 apk add imagemagick 
 #apk add advancecomp gifsicle 
 apk add jpegoptim #libjpeg-progs optipng pngcrush 
-apk add pngquant 
+apk add pngquant jpeg 
 apk add jhead --repository=$rep2
 apk add oxipng --repository=$rep1
 apk add npm nodejs ruby ruby-dev
