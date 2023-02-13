@@ -33,7 +33,7 @@ npm install -g yarn
 #start database
 chmod -R a+rwx /root
 chmod -R a+rwx /run
-chmod -R a+rwx /usr/lib/ruby
+chmod -R a+rwx /usr/lib/ruby /usr/bin
 $sudo -u postgres mkdir -p /root/data /run/postgresql
 $sudo -u postgres initdb -D /root/data/pg
 $sudo -u postgres postgres -D /root/data/pg &
