@@ -47,6 +47,7 @@ $sudo -u postgres bundle install
 $sudo -u postgres yarn install
 $sudo -u postgres bundle exec rake db:create
 $sudo -u postgres bundle exec rake db:migrate
-export UNICORN_BIND_ALL=true
+#export UNICORN_BIND_ALL=true
 sed -i -e "/<</s:/.*/:/.*/:" config/environments/development.rb
 $sudo -E -u postgres bundle exec rails server &
+$sudo -u postgres bin/ember-cli &
